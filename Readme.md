@@ -10,11 +10,18 @@ Before using the Gmail class, you need to obtain credentials for the Gmail API:
 
 1. Go to the [Google Developers Console](https://console.developers.google.com/).
 2. Create a new project or select an existing one.
-3. Navigate to the **Credentials** tab.
-4. Click on **Create credentials** and select **OAuth client ID**.
-5. Choose the application type as **Desktop app**.
-6. Click **Create**.
-7. Download the credentials file in JSON format and save it as `credentials.json` in the same directory as your code.
+3. Enable the Gmail api. ![image](https://github.com/Silvrash/send-with-gmail-node/assets/35709836/1ac80517-8fd2-47fb-90cc-adfc11dfb7b1)
+4. Configure OAuth Consent Screen.
+   ![image](https://github.com/Silvrash/send-with-gmail-node/assets/35709836/6085fee1-6931-4e51-9023-289c104e0a61)    
+   You can decide to Select External as a user type but you'll have to wait a while for google to approve your application.
+
+6. Add OAuth 2.0 Scopes. Click the Add Or Remove Scopes button and add https://www.googleapis.com/auth/gmail.send to the list of scopes since we only want to send emails from Gmail.
+   ![image](https://github.com/Silvrash/send-with-gmail-node/assets/35709836/ae5ca03c-bfed-41bd-8e83-2a7822c0c237)
+7. Navigate to the **Credentials** tab.
+8. Click on **Create credentials** and select **OAuth client ID**.
+9. Choose the application type as **Desktop app**.
+10. Click **Create**.
+11. Download the credentials file in JSON format and save it as `credentials.json` in the same directory as your code.
 
 ### 2. Installation
 
