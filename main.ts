@@ -1,15 +1,13 @@
 import { Gmail } from "./Gmail";
 
 async function main(){
-    const gmail = new Gmail()
+    const gmail = new Gmail();
 
-    // await gmail.authorizeApplication()
+    await gmail.authorizeApplication();
 
-    // await gmail.saveToken(
-    //     "4/0AeaYSHCA7XPKouxOwssSij12J7R6Cju_ZjQCUFBLO7bOtzeI08csxV14T7Luzhxoz-WNHQ",
-    // );
+    // await gmail.authorizeApplication("YOUR_AUTHORIZATION_CODE");
 
-    await gmail.sendEmail("azumahebenezer1@gmail.com", "Test", "Did it work? Lemme know if you got this email.");
+    // await gmail.sendEmail("azumahebenezer1@gmail.com", "Test", "Did it work? Lemme know if you got this email.");
 }
 
 main()
